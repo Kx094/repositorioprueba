@@ -55,7 +55,7 @@ public class Municipio {
         this.id = id;
         this.Nombre = Nombre;
     }
-    /*
+    
     public int getId() {
         return id;
     }
@@ -67,7 +67,7 @@ public class Municipio {
     }
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
-    }*/
+    }
     
     @Override
     public String toString() {
