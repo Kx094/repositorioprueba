@@ -12,10 +12,9 @@ import models.Municipio;
  * @author sarav
  */
 public class Catalogo {
-    
     static ArrayList<Municipio> municipios = new ArrayList<>();
     
-    public static void llenarMunicipios(){
+    /*public static void llenarMunicipios(){
         municipios.add(new Municipio(1, "Calkini"));
         municipios.add(new Municipio(2, "Campeche"));
         municipios.add(new Municipio(3, "Carmen"));
@@ -41,28 +40,22 @@ public class Catalogo {
         for(int i=0;i<municipios.size();i++){
             System.out.println(municipios.get(i).toString());
         }
-    }
-    
-    public static void eliminarMunicipio(int posicion){
-        municipios.remove(posicion);
-    }
-    
-    public static void insertarMunicipio(int id, String nombre){
-        municipios.add(new Municipio(id, nombre));
-    }
+    }*/
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        llenarMunicipios();
-        eliminarMunicipio(3);
-        listarMunicipiosForI();
+        //llenarMunicipios();
+        Municipio.llenarMunicipios();
+        Municipio.listarMunicipiosForE();
+        Municipio.listarMunicipiosForI();
+        Municipio.eliminarMunicipio(3);
+        Municipio.listarMunicipiosForI();
         
-        insertarMunicipio(4, "Champoton");
-        insertarMunicipio(7, "Hopelchen");
-        insertarMunicipio(8, "Palizada");
-        listarMunicipiosForI();
+        Municipio.insertarMunicipio(4, "Champoton");
+        Municipio.insertarMunicipio(7, "Hopelchen");
+        Municipio.insertarMunicipio(8, "Palizada");
+        Municipio.listarMunicipiosForI();
     }
-    
 }
